@@ -1,0 +1,11 @@
+ #utlib-branding-bar {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	box-shadow: rgba(0,0,0,0.5) 1px 1px 2px; 
+}
+.bar-ut { background-color: white; height: 35px; }
+.bar-library { background-color: #cc5500; height: 28px; }
+#utlib-branding-bar > * { margin: 0; padding: 0; width: 100%;}
+#bar-liblogo { display: inline;}
