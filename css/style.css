@@ -645,7 +645,7 @@ h1#page-title {
   padding: 0 1em 0 0; /* LTR */
   white-space: nowrap;
 }
-.field-type-text-with-summary { 
+.field-two-columns { 
   column-count: 2;
     -webkit-column-count: 2;
     -moz-column-count: 2;
