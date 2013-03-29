@@ -51,10 +51,10 @@ body,
   position: relative;
 }
 .one-sidebar #content {
-  width: 720px;
+  width: 705px;
 }
 .two-sidebars #content {
-  width: 480px;
+  width: 465px;
 }
 .no-sidebars #content {
   width: 960px;
