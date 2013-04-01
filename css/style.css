@@ -1,4 +1,8 @@
 
+/* ----------- Typography --------------- */
+@import url(http://fonts.googleapis.com/css?family=Fjalla+One);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+
 /* ---------- Overall Specifications ---------- */
 
 body {
@@ -107,7 +111,8 @@ body,
 #site-slogan,
 .ui-widget,
 .comment-form label {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  /* font-family: Georgia, "Times New Roman", Times, serif; */
+  font-family: 'Open Sans', Verdana, Tahoma, "DejaVu Sans", sans-serif 
 }
 #header,
 #footer-wrapper,
@@ -130,7 +135,7 @@ select,
 a.button {
   font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
 }
-
+.title { font:normal 1.5em/48px "Fjalla One", sans-serif; }
 /* ------------------ Reset Styles ------------------ */
 
 caption {
