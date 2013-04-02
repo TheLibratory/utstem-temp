@@ -91,6 +91,7 @@
 
   <div id="header" class="<?php print $secondary_menu ? 'with-secondary-menu': 'without-secondary-menu'; ?>"><div class="section clearfix">
 
+  <?php if ($is_front): ?> <!-- Only do this on the front page -->
     <?php if ($logo): ?>
      <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
         <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
@@ -124,48 +125,80 @@
     <?php endif; ?>
 
     <?php print render($page['header']); ?>
-  <div id="nav-menus">
-    <?php if ($main_menu): ?>
-      <div id="main-menu" class="navigation">
-        <?php print theme('links__system_main_menu', array(
-          'links' => $main_menu,
-          'attributes' => array(
-            'id' => 'main-menu-links',
-            'class' => array('navigation-links', 'clearfix'),
-          ),
-          'heading' => array(
-            'text' => t('Main menu'),
-            'level' => 'h2',
-            'class' => array('element-invisible'),
-          ),
-        )); ?>
-      </div> <!-- /#main-menu -->
-    <?php endif; ?>
+  
+    <div id="nav-menus">
+      <?php if ($main_menu): ?>
+        <div id="main-menu" class="navigation">
+          <?php print theme('links__system_main_menu', array(
+            'links' => $main_menu,
+            'attributes' => array(
+              'id' => 'main-menu-links',
+              'class' => array('navigation-links', 'clearfix'),
+            ),
+            'heading' => array(
+              'text' => t('Main menu'),
+              'level' => 'h2',
+              'class' => array('element-invisible'),
+            ),
+          )); ?>
+        </div> <!-- /#main-menu -->
+      <?php endif; ?>
 
-    <?php if ($secondary_menu): ?>
-      <div id="secondary-menu" class="navigation">
-        <?php print theme('links__system_secondary_menu', array(
-          'links' => $secondary_menu,
-          'attributes' => array(
-            'id' => 'secondary-menu-links',
-            'class' => array('navigation-links', 'inline', 'clearfix'),
-          ),
-          'heading' => array(
-            'text' => t('Secondary menu'),
-            'level' => 'h2',
-            'class' => array('element-invisible'),
-          ),
-        )); ?>
-      </div> <!-- /#secondary-menu -->
-    <?php endif; ?>
-    
-    <?php if ($page['navigation_menus']): ?>
-      <div id="user_menus" class="navigation">
-        <?php print render($page['navigation_menus']); ?>
-      </div> <!-- /.navigation menus -->
-    <?php endif; ?>
+      <?php if ($secondary_menu): ?>
+        <div id="secondary-menu" class="navigation">
+          <?php print theme('links__system_secondary_menu', array(
+            'links' => $secondary_menu,
+            'attributes' => array(
+              'id' => 'secondary-menu-links',
+              'class' => array('navigation-links', 'inline', 'clearfix'),
+            ),
+            'heading' => array(
+              'text' => t('Secondary menu'),
+              'level' => 'h2',
+              'class' => array('element-invisible'),
+            ),
+          )); ?>
+        </div> <!-- /#secondary-menu -->
+      <?php endif; ?>
+      
+      <?php if ($page['navigation_menus']): ?>
+        <div id="user_menus" class="navigation">
+          <?php print render($page['navigation_menus']); ?>
+        </div> <!-- /.navigation menus -->
+      <?php endif; ?>
+    </div> <!-- end #nav-menus -->
+  
+  <?php else : ?> <!-- If not the front page, do this -->
+    <div class="section" id="header-right">
+      <div id="header-left" style="float: left;">
+        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
+            <img src="<?php print $directory . '/images/logo_small.png' ?>" alt="<?php print t('Home'); ?>" />
+        </a>
+      </div>
+      <?php if ($main_menu): ?>
+        <div id="header-right" style="float: right;">
+            <?php if ($page['header_right']): ?>
+              <?php print render($page['header_right']); ?>
+            <?php endif ?>
+            
+            <?php print theme('links__system_main_menu', array(
+            'links' => $main_menu,
+            'attributes' => array(
+              'id' => 'header-menu-links',
+              'class' => array('navigation-links', 'clearfix'),
+            ),
+            'heading' => array(
+              'text' => t('Main menu'),
+              'level' => 'h2',
+              'class' => array('element-invisible'),
+            ),
+          )); ?>
+        </div> <!-- /#nav-menu -->
+      <?php endif; ?>
+    </div>
+      
+  <?php endif ?> <!-- end if front -->
 
-  </div> <!-- end #nav-menus -->
   </div></div> <!-- /.section, /#header -->
 
   <?php if ($messages): ?>

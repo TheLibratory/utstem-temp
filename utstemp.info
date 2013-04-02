@@ -12,6 +12,7 @@ stylesheets[all][] = css/utbranding.css
 stylesheets[print][] = css/print.css
 
 regions[header] = Header
+regions[header_right] = Header Right
 regions[help] = Help
 regions[page_top] = Page top
 regions[navigation_menus] = Navigation Menus

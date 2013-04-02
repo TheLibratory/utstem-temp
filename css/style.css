@@ -110,7 +110,8 @@ pre {
 body,
 #site-slogan,
 .ui-widget,
-.comment-form label {
+.comment-form label, 
+#header-right {
   /* font-family: Georgia, "Times New Roman", Times, serif; */
   font-family: 'Open Sans', Verdana, Tahoma, "DejaVu Sans", sans-serif 
 }
@@ -460,6 +461,17 @@ h1#site-name {
   padding: 0 0.5em;
 }
 
+.region-header-right {
+  text-align: right;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 150%;
+  margin-top: 1em;
+  padding-bottom: .5em;
+  border-bottom: 1px solid #6C9EB2;
+  color: #6C9EB2;
+  text-shadow: 1px 1px 0 rgba(0,0,0,0.15);
+}
+
 /* ------------ Navigation Menu ------------ */
 #nav-menus {
   background-color: #79A7B9;
@@ -517,6 +529,13 @@ h1#site-name {
   background: #f0f0f0;
   background: rgba(240, 240, 240, 1.0);
 }
+#header-menu-links a { color: rgb(59,121,163); }
+#header-menu-links li a:hover{
+  color: black;
+  background-color: rgba(108,158,178,0.3);
+  box-shadow: 0px 2px 0px rgba(0,0,0,0.2);
+}
+#header-menu-links li.active-trail { background-color: rgba(108,158,178,0.2); }
 
 /* ------------------- Main ------------------- */
 
