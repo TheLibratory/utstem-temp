@@ -172,7 +172,7 @@
     <div class="section" id="header-right">
       <div id="header-left" style="float: left;">
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
-            <img src="<?php print $directory . '/images/logo_small.png' ?>" alt="<?php print t('Home'); ?>" />
+            <img src="/<?php print $directory . '/images/logo_small.png' ?>" alt="<?php print t('Home'); ?>" />
         </a>
       </div>
       <?php if ($main_menu): ?>

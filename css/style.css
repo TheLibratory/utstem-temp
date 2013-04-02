@@ -460,7 +460,6 @@ h1#site-name {
   display: inline;
   padding: 0 0.5em;
 }
-
 .region-header-right {
   text-align: right;
   font-family: "Fjalla One", sans-serif;
@@ -471,6 +470,7 @@ h1#site-name {
   color: #6C9EB2;
   text-shadow: 1px 1px 0 rgba(0,0,0,0.15);
 }
+.region-header-right p { margin: 0; }
 
 /* ------------ Navigation Menu ------------ */
 #nav-menus {
@@ -479,7 +479,6 @@ h1#site-name {
   background-image: -webkit-linear-gradient(top, transparent, rgba(0,0,0,0.2)); /* chrome */
   background-image: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%); /* FF3.6+ */;
   background-image: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.2) 100%); /* Opera 11.10+ */;
-  
 }
 
 /* ------------ Primary Menu ------------ */
