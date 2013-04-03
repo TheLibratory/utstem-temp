@@ -35,6 +35,7 @@ regions[footer_fourthcolumn] = Footer fourth column
 regions[footer] = Footer
 
 settings[shortcut_module_link] = 0
+settings[toggle_breadcrumbs] = 0
 
 
 ; Information added by drupal.org packaging script on 2013-01-16
