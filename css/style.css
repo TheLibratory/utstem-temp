@@ -504,13 +504,13 @@ h1#site-name {
   margin: 0 2px;
 }
 .navigation-links a {
-  color: rgb(2,67,83);
+  color: rgb(255,255,255);
   float: left; /* LTR */
   height: 2.4em;
   line-height: 2.4em;
   padding: 0 0.3em;
   text-decoration: none;
-  text-shadow: 0 1px rgba(255,255,255,0.2);
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 }
 .navigation-links a:hover,
 .navigation-links a:focus {
