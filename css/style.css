@@ -15,6 +15,10 @@ body {
   outline: 0;
   background-image: url(images/gplaypattern.png);
 }
+hr {
+  border: 1px solid #abc;
+  height: 0px;
+}
 a:link,
 a:visited {
   text-decoration: none;
@@ -230,6 +234,43 @@ table ul.links {
 table ul.links li {
   padding: 0 1em 0 0;
 }
+/***
+ *                      888                    888          888          
+ *                      888                    888          888          
+ *                      888                    888          888          
+ *    .d8888b   .d8888b 88888b.   .d88b.   .d88888 888  888 888  .d88b.  
+ *    88K      d88P"    888 "88b d8P  Y8b d88" 888 888  888 888 d8P  Y8b 
+ *    "Y8888b. 888      888  888 88888888 888  888 888  888 888 88888888 
+ *         X88 Y88b.    888  888 Y8b.     Y88b 888 Y88b 888 888 Y8b.     
+ *     88888P'  "Y8888P 888  888  "Y8888   "Y88888  "Y88888 888  "Y8888  
+ *                                                                       
+ *                                                                       
+ *                                                                       
+ */
+ #conf-schedule { border-collapse: collapse; font-family: 'Open Sans', sans-serif; }
+ #conf-schedule tr td:first-child { width: 115px; }
+ #conf-schedule tr:hover td { background-color: rgba(0,0,0,0.04); }
+ #conf-schedule tr td { border: 0; padding: 0.5em; }
+ #conf-schedule tr { background-color: rgba(107, 152, 194, 0.10); }
+ #conf-schedule .conf-bold { 
+  font-weight: bold; 
+  font-size: 1rem; 
+  color: rgb(59,121,163); 
+  text-shadow: 1px 1px 1px rgba(255,255,255,0.25);
+}
+#conf-schedule thead { border: 3px solid rgb(71,114,143); }
+#conf-schedule tr th { background: rgba(0,44,68,0.56); }
+#conf-schedule tbody {
+  border-right: 3px solid #abc;
+  border-left: 3px solid #abc;
+}
+#conf-schedule #column-1, #conf-schedule #column-3 {
+  background-color: rgba(0,0,0,0.1);
+  border-right: 1px solid rgba(0,0,0,0.1);
+  border-left: 1px solid rgba(0,0,0,0.1);
+}
+#conf-schedule tbody:last-child { border-bottom: 1px solid #ccc; }
+ .row-spacer { height: 10px; }
 
 /* ------------------ List Styles ------------------ */
 

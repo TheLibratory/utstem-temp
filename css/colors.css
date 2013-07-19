@@ -51,3 +51,6 @@ a:active {
 #name-and-slogan,
 #name-and-slogan a,
 #secondary-menu-links li a {}
+::selection {
+  background-color: lightblue;
+}
