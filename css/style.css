@@ -114,10 +114,10 @@ pre {
 body,
 #site-slogan,
 .ui-widget,
-.comment-form label, 
+.comment-form label,
 #header-right {
   /* font-family: Georgia, "Times New Roman", Times, serif; */
-  font-family: 'Open Sans', Verdana, Tahoma, "DejaVu Sans", sans-serif 
+  font-family: 'Open Sans', Verdana, Tahoma, "DejaVu Sans", sans-serif
 }
 #header,
 #footer-wrapper,
@@ -709,7 +709,7 @@ h1#page-title {
   padding: 0 1em 0 0; /* LTR */
   white-space: nowrap;
 }
-.field-two-columns { 
+.field-two-columns {
   column-count: 2;
     -webkit-column-count: 2;
     -moz-column-count: 2;
@@ -1718,4 +1718,13 @@ div.admin-panel .description {
 }
 #footer-wrapper .poll .bar .foreground {
   background-color: #ddd;
+}
+ul.conference-sponsor-list li {
+  list-style: none;
+  list-style-type: none;
+  display: inline;
+  margin-left: 2em;
+}
+ul.conference-sponsor-list li:before {
+  margin-left: none;
 }
