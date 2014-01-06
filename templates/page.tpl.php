@@ -88,7 +88,11 @@
 <?php include 'utbranding.php'; ?>
 
 <div id="page-wrapper"><div id="page">
-
+    <div id="console" class="clearfix">
+        <div class="messages warning">
+            This conference is over. This website remains as a historical archive. For more University of Texas Libraries conferences, please check <a href="http://conferences.lib.utexas.edu">http://conferences.lib.utexas.edu</a>.
+        </div>
+    </div>
   <div id="header" class="<?php print $secondary_menu ? 'with-secondary-menu': 'without-secondary-menu'; ?>"><div class="section clearfix">
 
   <?php if ($is_front): ?> <!-- Only do this on the front page -->
