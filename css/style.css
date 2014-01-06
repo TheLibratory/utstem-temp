@@ -252,7 +252,7 @@ table ul.links li {
  #conf-schedule tr:hover td { background-color: rgba(0,0,0,0.04); }
  #conf-schedule tr td { border: 0; padding: 0.5em; }
  #conf-schedule tr { background-color: rgba(107, 152, 194, 0.10); }
- #conf-schedule .conf-bold { 
+ #conf-schedule tbody tr:first-child /*.conf-bold*/ { 
   font-weight: bold; 
   font-size: 1rem; 
   color: rgb(59,121,163); 
@@ -270,7 +270,7 @@ table ul.links li {
   border-left: 1px solid rgba(0,0,0,0.1);
 }
 #conf-schedule tbody:last-child { border-bottom: 1px solid #ccc; }
- .row-spacer { height: 10px; }
+.row-spacer { height: 10px; }
 
 /* ------------------ List Styles ------------------ */
 
@@ -512,6 +512,24 @@ h1#site-name {
   text-shadow: 1px 1px 0 rgba(0,0,0,0.15);
 }
 .region-header-right p { margin: 0; }
+
+/***
+ *     .d888                               888                                      
+ *    d88P"                                888                                      
+ *    888                                  888                                      
+ *    888888 .d88b.  888d888      .d8888b  88888b.   8888b.  88888b.d88b.   .d88b.  
+ *    888   d88""88b 888P"        88K      888 "88b     "88b 888 "888 "88b d8P  Y8b 
+ *    888   888  888 888          "Y8888b. 888  888 .d888888 888  888  888 88888888 
+ *    888   Y88..88P 888               X88 888  888 888  888 888  888  888 Y8b.     
+ *    888    "Y88P"  888           88888P' 888  888 "Y888888 888  888  888  "Y8888  
+ *                                                                                  
+ *                                                                                  
+ *                                                                                  
+ */
+#header-left {
+  max-width: 1px;
+  overflow: visible;
+}
 
 /* ------------ Navigation Menu ------------ */
 #nav-menus {
